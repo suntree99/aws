@@ -48,8 +48,7 @@
 	sudo systemctl status nginx
 	```
     * _Bila menemui error "System has not been booted..." gunakan perintah `sudo service nginx start`_ [Info Service](https://itsfoss.com/start-stop-restart-services-linux/)
-    * _Lakukan pengecekan (Local Ubuntu) di web browser dengan url `http://localhost:80/`_
-    * _Port 80 adalah default port untuk NGINX_
+    * _Lakukan pengecekan (Local Ubuntu) di web browser dengan url `http://localhost:80/` Port 80 adalah default port untuk NGINX_
 
 ## Mengonfigurasi NGINX sebagai Reverse Proxy Server
 
