@@ -1,22 +1,29 @@
 # AWS (Amazon Web Service)
 
-## Menjalankan Web Server
+## Membuat Web Server (Pada terminal Ubuntu / konsol EC2)
 
-1. Menginstall NVM (Node Version Manager) pada Ubuntu
+0. Menambahkan berkas project, clone repository
+	```console
+	git clone <url git repository>
+	```
+
+1. Menginstal NVM (Node Version Manager)
 	```console
 	curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
 	```
+    * _Keluar dariterminal atau konsol dengan perintah `exit` agar nvm bekerja dengan baik_
 
-2. Menginstall Node.js versi tertentu
+2. Menginstal Node.js versi tertentu
 	```console
 	nvm install v14.15.4
 	```
-    * _Pastikan Node.js berhasil terpasang dengan mengeksekusi perintah node -v._
+    * _Pastikan Node.js berhasil terpasang dengan mengeksekusi perintah node -v_
 
-3. Menginstall NPM (Node Package Manager) untuk memasang beberapa dependencies pada project (pastikan berada dalam folder project)
+3. Menginstal NPM (Node Package Manager) untuk memasang beberapa dependencies pada project
 	```console
 	npm install
 	```
+    * _Pastikan berada dalam folder project_
 
 4. Menjalankan web server
 	```console
@@ -25,7 +32,7 @@
 
 ## Memasang NGINX pada EC2 Instance
 
-1. Menginstall NGINX di konsol EC2 instance
+1. Menginstal NGINX di konsol EC2 instance
 	```console
 	sudo apt update
 	sudo apt-get install nginx -y
