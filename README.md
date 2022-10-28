@@ -136,6 +136,32 @@
 	npm run start
 	```
 
+## Implementasi HTTPS di Amazon EC2
+1. Masuk ke EC2 instance dan instal tools certbot untuk NGINX
+    ```console
+    sudo apt-get update
+    sudo apt-get install python3-certbot-nginx -y
+    ```
+2. Membuat TLS certificate
+    ```console
+    sudo certbot --nginx -d <yourdomain.com> -d <www.yourdomain.com>
+    ```
+    * Contoh : sudo certbot --nginx -d calm-puma-33.a276.dcdg.xyz -d www.calm-puma-33.a276.dcdg.xyz
+
+3. Selama proses pembuatan certificate, Anda akan diminta menjawab beberapa pertanyaan. Beri jawaban sebagai berikut.
+    * Enter email address: isikan dengan alamat email Anda (Anda akan dihubungi jika certificate sudah kedaluwarsa).
+    * Terms of Service: A (Agree).
+    * Would you be willing to share your email address: N (No).
+    * Please choose whether or not to redirect HTTP traffic to HTTPS: 2 (Redirect)
+
+4. Masuk kembali ke folder project dan jalankan kembali Web Server
+	```console
+	npm run start
+	```
+
+*Perhatian!*
+_Apabila sudah tidak diperlukan, harap hapus semua sumber daya AWS yang telah Anda buat, seperti Amazon VPC, Internet Gateway, Route Table, Amazon EC2, dan Security Group guna menghindari penagihan di kemudian hari._
+
 ##
 ##
 
