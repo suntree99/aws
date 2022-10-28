@@ -1,6 +1,6 @@
 # AWS (Amazon Web Service)
 
-## Membuat Web Server (Pada terminal Ubuntu / konsol EC2)
+## Membuat Web Server (EC2 AWS / Local Ubuntu)
 
 0. Menambahkan berkas project, clone repository
 	```console
@@ -32,7 +32,7 @@
 	npm run start
 	```
     * _Lakukan pengecekan (EC2 AWS) di web browser dengan url `http://<public-ip-address>:8000/`_
-    * _Lakukan pengecekan (Lokal Ubuntu) di web browser dengan url `http://localhost:8000/`_
+    * _Lakukan pengecekan (Local Ubuntu) di web browser dengan url `http://localhost:8000/`_
 
 ## Memasang NGINX pada EC2 Instance
 
