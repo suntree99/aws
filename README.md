@@ -48,11 +48,11 @@
 	sudo systemctl status nginx
 	```
     * _Bila menemui error "System has not been booted..." gunakan perintah `sudo service nginx start`_ [Info Service](https://itsfoss.com/start-stop-restart-services-linux/)
-    * _Lakukan pengecekan (Local Ubuntu) di web browser dengan url `http://localhost:80/` Port 80 adalah default port untuk NGINX_
+    * _Lakukan pengecekan (Local Ubuntu) di web browser dengan url `http://localhost:80/` port 80 adalah default port untuk NGINX_
 
 ## Mengonfigurasi NGINX sebagai Reverse Proxy Server
 
-1. Memasuki berkas NGINX
+1. Memasuki (melihat) berkas NGINX
 	```console
 	cat /etc/nginx/sites-available/default
 	```
@@ -74,10 +74,9 @@
 	}
 	```
 
-4. Simpan perubahan dengan CTRL+X, lalu Y, dan Enter. jalankan ulang NGINX
+4. Simpan perubahan dengan CTRL+X, lalu Y, dan Enter. Jalankan ulang NGINX
 	```console
 	sudo systemctl restart nginx
-	}
 	```
 
 5. Masuk kembali ke folder project dan jalankan kembali Web Server
