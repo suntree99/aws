@@ -11,24 +11,28 @@
 	```console
 	curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
 	```
-    * _Keluar dariterminal atau konsol dengan perintah `exit` agar nvm bekerja dengan baik_
+    * _Keluar dengan perintah `exit` dan masuk kembali agar nvm bekerja dengan baik_
+    * _Pastikan npm berhasil terpasang dengan mengeksekusi perintah `nvm -v`_
 
 2. Menginstal Node.js versi tertentu
 	```console
 	nvm install v14.15.4
 	```
-    * _Pastikan Node.js berhasil terpasang dengan mengeksekusi perintah node -v_
+    * _Pastikan Node.js berhasil terpasang dengan mengeksekusi perintah `node -v`_
 
 3. Menginstal NPM (Node Package Manager) untuk memasang beberapa dependencies pada project
 	```console
 	npm install
 	```
     * _Pastikan berada dalam folder project_
+    * _Pastikan npm berhasil terpasang dengan mengeksekusi perintah `npm -v`_
 
 4. Menjalankan web server
 	```console
 	npm run start
 	```
+    * _Lakukan pengecekan (EC2 AWS) di web browser dengan url `http://<public-ip-address>:8000/`_
+    * _Lakukan pengecekan (Lokal Ubuntu) di web browser dengan url `http://localhost:8000/`_
 
 ## Memasang NGINX pada EC2 Instance
 
