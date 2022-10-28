@@ -11,6 +11,7 @@
 	```console
 	nvm install v14.15.4
 	```
+    * _Pastikan Node.js berhasil terpasang dengan mengeksekusi perintah node -v._
 
 3. Menginstall NPM (Node Package Manager) untuk memasang beberapa dependencies pada project (pastikan berada dalam folder project)
 	```console
