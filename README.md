@@ -102,10 +102,9 @@
 	```
 	* Catatan: Kode pada langkah ke-2 dan ke-3 merupakan sintaks untuk melimitasi akses pada web server NGINX. Berdasarkan kode tersebut, kita menginginkan pengguna yang mengakses resource / (root) hanya dapat membuat permintaan setiap 2 detik (rate=30r/m berarti 30 request per menit atau setara dengan 2 detik sekali).
 
-4. Simpan perubahan dengan CTRL+X, lalu Y, dan Enter. jalankan ulang NGINX
+4. Simpan perubahan dengan CTRL+X, lalu Y, dan Enter. Jalankan ulang NGINX
 	```console
 	sudo systemctl restart nginx
-	}
 	```
 
 5. Masuk kembali ke folder project dan jalankan kembali Web Server
