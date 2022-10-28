@@ -31,12 +31,13 @@
 	```console
 	npm run start
 	```
-    * _Lakukan pengecekan (EC2 AWS) di web browser dengan url `http://<public-ip-address>:8000/`_
-    * _Lakukan pengecekan (Local Ubuntu) di web browser dengan url `http://localhost:8000/`_
+    * _Lakukan pengecekan (EC2 AWS) di web browser dengan url `http://<public-ip-address>:<port>/`_
+    * _Lakukan pengecekan (Local Ubuntu) di web browser dengan url `http://localhost:<port>/`_
+    * _Port sesuai dengan settingan pada aplikasi_
 
 ## Memasang NGINX pada EC2 Instance
 
-1. Menginstal NGINX di konsol EC2 instance
+1. Menginstal NGINX pada EC2 instance
 	```console
 	sudo apt update
 	sudo apt-get install nginx -y
@@ -46,6 +47,9 @@
 	```console
 	sudo systemctl status nginx
 	```
+    * _Bila menemui error "System has not been booted..." gunakan perintah `sudo service nginx start`_ [Info Service](https://itsfoss.com/start-stop-restart-services-linux/)
+    * _Lakukan pengecekan (Local Ubuntu) di web browser dengan url `http://localhost:80/`_
+    * _Port 80 adalah default port untuk NGINX_
 
 ## Mengonfigurasi NGINX sebagai Reverse Proxy Server
 
