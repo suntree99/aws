@@ -100,7 +100,7 @@
 	```console
 	limit_req zone=one;
 	```
-	* Catatan: Kode pada langkah ke-2 dan ke-3 merupakan sintaks untuk melimitasi akses pada web server NGINX. Berdasarkan kode tersebut, kita menginginkan pengguna yang mengakses resource / (root) hanya dapat membuat permintaan setiap 2 detik (rate=30r/m berarti 30 request per menit atau setara dengan 2 detik sekali).
+	* _Kode pada langkah ke-2 dan ke-3 merupakan sintaks untuk melimitasi akses pada web server NGINX. Berdasarkan kode tersebut, kita menginginkan pengguna yang mengakses resource / (root) hanya dapat membuat permintaan setiap 2 detik (rate=30r/m berarti 30 request per menit atau setara dengan 2 detik sekali)._
 
 4. Simpan perubahan dengan CTRL+X, lalu Y, dan Enter. Jalankan ulang NGINX
 	```console
@@ -114,7 +114,7 @@
 
 6. Akses kembali IP address EC2, lakukan reload dengan cepat sebelum 2 detik, maka seharusnya akan terblock (503 Service Temporarily Unavailable), tunggu 2 detik dan reload kembali makan akan kembali normal.
 
-	* Dalam praktik ini, penerapan limit access berlaku pada seluruh cakupan path alias root (/). Jika Anda ingin menerapkan limit access pada resource secara spesifik (contohnya /authentications), definisikan pada blok *location /authentications*.
+	* _Dalam praktik ini, penerapan limit access berlaku pada seluruh cakupan path alias root (/). Jika Anda ingin menerapkan limit access pada resource secara spesifik (contohnya /authentications), definisikan pada blok_ *location /authentications*.
 
 7. Terakhir, hapus inbound rule pada Security Group yang mengarah langsung ke aplikasi (yakni rule yang mengizinkan port 8000). Tujuannya supaya jalur untuk mengakses aplikasi hanya tersedia melalui reverse proxy server.
 
