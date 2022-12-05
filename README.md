@@ -175,33 +175,20 @@
 *Perhatian!*
 _Apabila sudah tidak diperlukan, harap hapus semua sumber daya AWS yang telah Anda buat, seperti Amazon VPC, Internet Gateway, Route Table, Amazon EC2, dan Security Group guna menghindari penagihan di kemudian hari._
 
+## Materi AWS
+* [Modul 1 : Pengantar ke Amazon Web Services](https://www.youtube.com/watch?v=Za4zQnFKHiA)
+* [Modul 2 : Komputasi di Cloud](https://www.youtube.com/watch?v=ds23QIICgyk)
+* [Modul 3 : -]()
+* [Modul 4 : Jaringan](https://www.youtube.com/watch?v=340DcnRIWyE)
+* [Modul 5 : Penyimpanan dan Database](https://www.youtube.com/watch?v=iTK_B3EI7-I)
+
 ##
-##
-
-# Heading 1 / Judul Utama (gunakan #)
-
-## Heading 2 / Sub Judul (gunakan ##)
-
-Text biasa (ditulis biasa tanpa format apapun)
-
-[Hyperlink](https://www.google.com) (nama hyperlink dibungkus kurung siku, urlnya dibungkus tanda kurung biasa)
-
 ```bash
-git add .
-git commit -m "baris code menggunakan backtick 3x di awal(sertakan bahasanya) dan akhir code"
-git push
+Update This File
 ```
-
-Untuk `menyoroti` bungkus text dengan backtick 1x
-
-# Template
-
-## Sub Judul 
-```<bahasa>
+```bash
 git add .
 git commit -m 'Update README.md'
 git push
 
 ```
-
-Update README.md
