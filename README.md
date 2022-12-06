@@ -182,6 +182,7 @@ _Apabila sudah tidak diperlukan, harap hapus semua sumber daya AWS yang telah An
 * [Modul 4 : Jaringan](https://www.youtube.com/watch?v=340DcnRIWyE)
 * [Modul 5 : Penyimpanan dan Database](https://www.youtube.com/watch?v=iTK_B3EI7-I)
 * [Modul 6 : Keamanan](https://www.youtube.com/watch?v=J1eG_K-jloM)
+* [Modul 7 : Pemantauan dan Analitik](https://www.youtube.com/watch?v=QxSr0bsKgow)
 
 ##
 ```bash
